@@ -45,9 +45,12 @@ namespace Expense_Tracker.Controllers
         }
 
         // GET: Category/Create
-        public IActionResult Create()
+        public IActionResult Create(int id = 0)
         {
+            if (id == 0)
             return View(new Category());
+            else 
+                return View(_context.Categories.Find(id));
         }
 
         // POST: Category/Create
