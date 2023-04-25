@@ -12,7 +12,7 @@
 
         <form asp-action="AddOrEdit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" name="Categoryid" value="CategoryId"  />
+            <input type="hidden" name="CategoryId" value="@Model.CategoryId"  />
             <div class="mb-3 custrom-rbt-group">
                 <div class='e-btn-group'>
                     <input type="radio" id="radioleft" name="align" value="Expense" checked="@(Model.Type=="Expense")" />
