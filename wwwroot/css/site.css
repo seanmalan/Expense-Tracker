@@ -47,3 +47,10 @@ color: #fff;
     border: 1pc solid #fff;
 }
 
+/*Widget*/
+
+.widget {
+    border-radius: 1rem;
+background-color: #1a222b;
+}
+
